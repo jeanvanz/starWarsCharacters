@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./src/pages/Home";
 import Character from "./src/pages/Character";
 import Starships from "./src/pages/Starships";
+import Films from "./src/pages/Films";
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +38,17 @@ export default function App() {
         <Stack.Screen
           component={Starships}
           name="Starships"
+          options={{
+            headerStyle: {
+              backgroundColor: '#000000',
+            }, headerTitleStyle: {
+              color: '#000000'
+            }
+          }}
+        />
+        <Stack.Screen
+          component={Films}
+          name="Films"
           options={{
             headerStyle: {
               backgroundColor: '#000000',

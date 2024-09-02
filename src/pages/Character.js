@@ -56,7 +56,7 @@ export default function Character({ route, navigation }) {
             <Text style={styles.buttonText}>Naves</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Films", { filmsUrl: character.films })}>
             <Text style={styles.buttonText}>Filmes</Text>
           </TouchableOpacity>
         </>
