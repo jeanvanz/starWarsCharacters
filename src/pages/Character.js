@@ -52,7 +52,7 @@ export default function Character({ route, navigation }) {
             <Text style={styles.text}>Nenhum detalhe disponível</Text>
           )}
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Starships", { starshipsUrl: character.starships })}>
             <Text style={styles.buttonText}>Naves</Text>
           </TouchableOpacity>
 
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 20,
-    backgroundColor: "#000000",
     borderWidth: 2,
     borderColor: "#FFE81F",
     borderRadius: 5,
