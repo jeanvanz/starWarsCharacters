@@ -5,6 +5,7 @@ export default function Home({ navigation }) {
   const goToCharDetails = (charName) => {
     navigation.navigate("Character", { charName });
   };
+
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={() => goToCharDetails("Luke Skywalker")}>
@@ -39,8 +40,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     height: 60,
-    borderWidth: 1,
-    borderRadius: 5,
     backgroundColor: "#000000",
     marginBottom: 10,
     borderWidth: 2,

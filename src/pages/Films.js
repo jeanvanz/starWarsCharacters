@@ -55,26 +55,26 @@ export default function Films({ route }) {
 }
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      paddingHorizontal: 20,
-      backgroundColor: "#000000",
-    },
-    detailsContainer: {
-      justifyContent: "center",
-      alignItems: "center",
-      marginBottom: 20,
-      borderWidth: 2,
-      borderColor: "#FFE81F",
-      borderRadius: 5,
-      padding: 10,
-    },
-    text: {
-      fontSize: 22,
-      fontWeight: "300",
-      color: "#FFE81F",
-      marginVertical: 5,
-    },
-  });
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    backgroundColor: "#000000",
+  },
+  detailsContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 20,
+    borderWidth: 2,
+    borderColor: "#FFE81F",
+    borderRadius: 5,
+    padding: 10,
+  },
+  text: {
+    fontSize: 22,
+    fontWeight: "300",
+    color: "#FFE81F",
+    marginVertical: 5,
+  },
+});
